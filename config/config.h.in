@@ -1,0 +1,74 @@
+#define SKYWALKER_VERSION_MAJOR @SKYWALKER_VERSION_MAJOR@
+#define SKYWALKER_VERSION_MINOR @SKYWALKER_VERSION_MINOR@
+#define SKYWALKER_VERSION_PATCH @SKYWALKER_VERSION_PATCH@
+
+#cmakedefine DEBUG
+
+#define SIZEOF_INT @SIZEOF_INT@
+#define SIZEOF_LONG @SIZEOF_LONG@
+#define SIZEOF_TIME_T @SIZEOF_TIME_T@
+#define SIZEOF_OFF_T @SIZEOF_OFF_T@
+
+#if @SIZEOF_VOID_PTR@ == 8
+#define ARCH_64
+#elif @SIZEOF_VOID_PTR@ == 4
+#define ARCH_32
+#endif
+
+#cmakedefine HAVE__NSGETENVIRON
+#cmakedefine HAVE_CRT_EXTERNS_H
+#cmakedefine HAVE_DIRENT_H
+#cmakedefine HAVE_FCNTL_H
+#cmakedefine HAVE_FD_CLOEXEC
+#cmakedefine HAVE_FSEEKO
+#cmakedefine HAVE_FSYNC
+#cmakedefine HAVE_GETPWENT
+#cmakedefine HAVE_GETPWNAM
+#cmakedefine HAVE_GETPWUID
+#cmakedefine HAVE_ICONV
+#cmakedefine USE_ICONV
+#cmakedefine HAVE_ICONV_H
+#cmakedefine HAVE_LANGINFO_H
+#cmakedefine HAVE_LIBGEN_H
+#cmakedefine HAVE_LOCALE_H
+#cmakedefine HAVE_LSTAT
+#cmakedefine HAVE_NL_LANGINFO_CODESET
+#cmakedefine HAVE_NL_MSG_CAT_CNTR
+#cmakedefine HAVE_OPENDIR
+#define HAVE_OSPEED 1
+#cmakedefine HAVE_PUTENV
+#cmakedefine HAVE_PWD_H
+#cmakedefine HAVE_READLINK
+// TODO: add proper cmake check
+// #define HAVE_SELINUX 1
+#cmakedefine HAVE_SETENV
+#cmakedefine HAVE_SETPGID
+#cmakedefine HAVE_SETSID
+#cmakedefine HAVE_SIGACTION
+#cmakedefine HAVE_SIGVEC
+#cmakedefine HAVE_STRCASECMP
+#cmakedefine HAVE_STRINGS_H
+#cmakedefine HAVE_STRNCASECMP
+#cmakedefine HAVE_STROPTS_H
+#cmakedefine HAVE_SYS_IOCTL_H
+#cmakedefine HAVE_SYS_PARAM_H
+#cmakedefine HAVE_SYS_TIME_H
+#cmakedefine HAVE_SYS_UTSNAME_H
+#cmakedefine HAVE_SYS_WAIT_H
+#cmakedefine HAVE_TERMCAP_H
+#cmakedefine HAVE_TERMIOS_H
+#cmakedefine HAVE_TERMIO_H
+#define HAVE_TGETENT 1
+#cmakedefine HAVE_UNISTD_H
+#define HAVE_UP_BC_PC 1
+#cmakedefine HAVE_UTIME
+#cmakedefine HAVE_UTIME_H
+#cmakedefine HAVE_UTIMES
+#cmakedefine HAVE_WORKING_LIBINTL
+#define RETSIGTYPE void
+#define SIGRETURN return
+#define TERMINFO 1
+#define TGETENT_ZERO_ERR 0
+#define TIME_WITH_SYS_TIME 1
+#cmakedefine UNIX
+#define USEMAN_S 1
